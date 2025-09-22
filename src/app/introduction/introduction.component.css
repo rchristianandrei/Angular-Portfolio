@@ -1,0 +1,9 @@
+.introduction{
+    background-color: var(--bg-color);
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+.profile-picture{
+    border: 3px solid var(--text-color);
+}

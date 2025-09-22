@@ -1,0 +1,14 @@
+#theme-toggle{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-top: 1px solid var(--text-color);
+    border-left: 0px;
+    border-bottom: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+    border-radius: 0 5px 5px 0;
+    transition: all .3s;
+}
+
+#theme-toggle:focus{
+    outline: none;
+}

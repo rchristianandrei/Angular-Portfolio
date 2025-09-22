@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Roboto+Mono:wght@100..700&display=swap');
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --footer-bg-color: rgb(253, 89, 116);
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --footer-bg-color: rgb(99, 34, 45);
+}
+
+*{
+  font-family: "Roboto", monospace;
+}
+
+html{
+  scroll-padding-top: 100px;
+}
+
+body {
+  transition: all 0.3s;
+}
