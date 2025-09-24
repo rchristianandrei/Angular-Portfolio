@@ -10,15 +10,36 @@ import { EmailService } from '../email.service';
   styleUrl: './footer.component.css',
 })
 export class FooterComponent {
-  name = "";
-  email ="";
-  subject="";
-  message="";
+  name = '';
+  email = '';
+  subject = '';
+  message = '';
+
+  private sending = false;
 
   constructor(private emailService: EmailService) {}
 
   async SendEmail() {
-    console.log(this.name, this.email, this.subject, this.message)
-    await this.emailService.sendEmail(this.name, this.email, this.subject, this.message);
+    if(this.sending) return;
+    this.sending = true;
+
+    const userConfirmed = window.confirm('Are you sure you want to proceed?');
+
+    if (!userConfirmed) return;
+
+    try {
+      await this.emailService.sendEmail(
+        this.name,
+        this.email,
+        this.subject,
+        this.message
+      );
+      this.name = this.email = this.subject = this.message = '';
+      alert('Message Successfully sent!');
+    } catch (err) {
+      alert('Message failed to send!');
+    } finally{
+      this.sending = false;
+    }
   }
 }
