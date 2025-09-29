@@ -6,11 +6,13 @@ import { IntroductionComponent } from "./introduction/introduction.component";
 import { GalleryComponent } from "./gallery/gallery.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { FooterComponent } from "./footer/footer.component";
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import { EducationComponent } from "./education/education.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, ThemeToggleComponent, IntroductionComponent, GalleryComponent, ProjectsComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, ThemeToggleComponent, IntroductionComponent, GalleryComponent, WorkExperienceComponent, ProjectsComponent, FooterComponent, EducationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
