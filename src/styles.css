@@ -1,6 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Roboto+Mono:wght@100..700&display=swap');
 
+.animate-element {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-element.animate-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 :root {
   --bg-color: #ffffff;
   --text-color: #000000;
