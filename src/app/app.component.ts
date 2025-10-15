@@ -5,7 +5,7 @@ import { ThemeToggleComponent } from './theme-toggle/theme-toggle.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { FooterComponent } from './footer/footer.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { EducationComponent } from './education/education.component';
 
@@ -20,7 +20,7 @@ import { EducationComponent } from './education/education.component';
     GalleryComponent,
     WorkExperienceComponent,
     ProjectsComponent,
-    FooterComponent,
+    ContactMeComponent,
     EducationComponent,
   ],
   templateUrl: './app.component.html',
